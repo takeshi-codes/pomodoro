@@ -23,6 +23,12 @@ function App() {
     volume: 0.25,
   });
 
+  const bigRedButton = () => {
+    setIsRunning(false);
+    setIsFirstTimer(true);
+    setTime(1500);
+  };
+
   useEffect(() => {
     if (!isRunning) return;
     if (time === 0) {
@@ -63,13 +69,18 @@ function App() {
         {`${Math.floor(time / 60)}`.padStart(2, 0)}:
         {`${time % 60}`.padStart(2, 0)}
       </h1>
+      <p>Works: {workCycles}</p>
+      <p>Breaks: {breakCycles}</p>
       <div className="card">
         <button onClick={() => setIsRunning((prev) => !prev)}>
           {isRunning ? "Pause" : "Start"} Timer
         </button>
       </div>
-      <p>Works: {workCycles}</p>
-      <p>Breaks: {breakCycles}</p>
+      <div className="card">
+        <button className="bigRedButton" onClick={() => bigRedButton()}>
+          Reset
+        </button>
+      </div>
     </>
   );
 }

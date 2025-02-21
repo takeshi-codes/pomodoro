@@ -15,7 +15,7 @@
   filter: drop-shadow(0 0 2em #ff7f7faa);
 }
 .logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+  filter: drop-shadow(0 0 2em #ff7f7faa);
 }
 
 @keyframes logo-spin {
@@ -37,6 +37,7 @@
   padding: 2em;
 }
 
-.read-the-docs {
-  color: #888;
+.bigRedButton {
+  color: #fafafa;
+  background-color: #d13834;
 }
