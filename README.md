@@ -1,8 +1,12 @@
-# React + Vite
+# Pomodoro Timer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The Pomodoro Technique is a time management method that involves working in 25-minute intervals, called pomodoros, with short breaks in between. The technique can help you focus and avoid burnout. 
 
-Currently, two official plugins are available:
+Created with React + Vite
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Features:
+- Automated 25 minute work cycles followed by 5 minute break cycles
+- Different chimes play depending on the cycle, so you can keep up even if you don't have the tab active
+- The Big Red Button™ resets timer and cycles
+  - not actually trademarked
+- Definitely not an image of a berry from a monster catching game related to pockets
